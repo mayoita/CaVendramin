@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22AB49911DD5DF4200126CAC /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49901DD5DF4200126CAC /* FirebaseAnalytics.framework */; };
+		22AB49931DD5E09B00126CAC /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49921DD5E09B00126CAC /* GoogleAppUtilities.framework */; };
+		22AB49951DD5E0B900126CAC /* GoogleNetworkingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49941DD5E0B900126CAC /* GoogleNetworkingUtilities.framework */; };
+		22AB49991DD5E0CD00126CAC /* GoogleParsingUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49961DD5E0CD00126CAC /* GoogleParsingUtilities.framework */; };
+		22AB499A1DD5E0CD00126CAC /* GooglePlusUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49971DD5E0CD00126CAC /* GooglePlusUtilities.framework */; };
+		22AB499B1DD5E0CD00126CAC /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49981DD5E0CD00126CAC /* GoogleSignIn.framework */; };
+		22AB499E1DD5E0DC00126CAC /* GTMOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB499C1DD5E0DC00126CAC /* GTMOAuth2.framework */; };
+		22AB499F1DD5E0DC00126CAC /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB499D1DD5E0DC00126CAC /* GTMSessionFetcher.framework */; };
+		22AB49A21DD5F90900126CAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49A11DD5F90900126CAC /* QuartzCore.framework */; };
+		22AB49A41DD5F91100126CAC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49A31DD5F91100126CAC /* AVFoundation.framework */; };
+		22AB49A61DD6187400126CAC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22AB49A51DD6187400126CAC /* CoreLocation.framework */; };
 		CDE586A71DD4B2E2001D8781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE586A61DD4B2E2001D8781 /* AppDelegate.swift */; };
 		CDE586AC1DD4B2E2001D8781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE586AA1DD4B2E2001D8781 /* Main.storyboard */; };
 		CDE586C31DD4B3D6001D8781 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CDE586B81DD4B3D6001D8781 /* Base.lproj */; };
-		CDE586C41DD4B3D6001D8781 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE586B91DD4B3D6001D8781 /* CollectionViewCell.swift */; };
 		CDE586C51DD4B3D6001D8781 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE586BA1DD4B3D6001D8781 /* DetailViewController.swift */; };
 		CDE586C61DD4B3D6001D8781 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE586BB1DD4B3D6001D8781 /* GradientView.swift */; };
 		CDE586C71DD4B3D6001D8781 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDE586BC1DD4B3D6001D8781 /* Images.xcassets */; };
@@ -36,16 +46,25 @@
 		CDE5872F1DD4BC31001D8781 /* FirebaseAppIndexing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE5872E1DD4BC31001D8781 /* FirebaseAppIndexing.framework */; };
 		CDE587311DD4BC3C001D8781 /* FirebaseDynamicLinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE587301DD4BC3C001D8781 /* FirebaseDynamicLinks.framework */; };
 		CDE587331DD4BC4F001D8781 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE587321DD4BC4F001D8781 /* FirebaseMessaging.framework */; };
-		CDE587391DD4BDB4001D8781 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE587381DD4BDB4001D8781 /* FirebaseAnalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22AB49901DD5DF4200126CAC /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		22AB49921DD5E09B00126CAC /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		22AB49941DD5E0B900126CAC /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		22AB49961DD5E0CD00126CAC /* GoogleParsingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleParsingUtilities.framework; sourceTree = "<group>"; };
+		22AB49971DD5E0CD00126CAC /* GooglePlusUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlusUtilities.framework; sourceTree = "<group>"; };
+		22AB49981DD5E0CD00126CAC /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		22AB499C1DD5E0DC00126CAC /* GTMOAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMOAuth2.framework; sourceTree = "<group>"; };
+		22AB499D1DD5E0DC00126CAC /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		22AB49A11DD5F90900126CAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		22AB49A31DD5F91100126CAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		22AB49A51DD6187400126CAC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CDE586A31DD4B2E2001D8781 /* CaVendramin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaVendramin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDE586A61DD4B2E2001D8781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDE586AB1DD4B2E2001D8781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDE586B21DD4B2E2001D8781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDE586B81DD4B3D6001D8781 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = CaVendramin/Base.lproj; sourceTree = "<group>"; };
-		CDE586B91DD4B3D6001D8781 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = CaVendramin/CollectionViewCell.swift; sourceTree = "<group>"; };
 		CDE586BA1DD4B3D6001D8781 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = CaVendramin/DetailViewController.swift; sourceTree = "<group>"; };
 		CDE586BB1DD4B3D6001D8781 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = CaVendramin/GradientView.swift; sourceTree = "<group>"; };
 		CDE586BC1DD4B3D6001D8781 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CaVendramin/Images.xcassets; sourceTree = "<group>"; };
@@ -73,7 +92,6 @@
 		CDE5872E1DD4BC31001D8781 /* FirebaseAppIndexing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAppIndexing.framework; sourceTree = "<group>"; };
 		CDE587301DD4BC3C001D8781 /* FirebaseDynamicLinks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDynamicLinks.framework; sourceTree = "<group>"; };
 		CDE587321DD4BC4F001D8781 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = "<group>"; };
-		CDE587381DD4BDB4001D8781 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,21 +99,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDE587391DD4BDB4001D8781 /* FirebaseAnalytics.framework in Frameworks */,
+				22AB49A61DD6187400126CAC /* CoreLocation.framework in Frameworks */,
+				22AB49A41DD5F91100126CAC /* AVFoundation.framework in Frameworks */,
+				22AB49A21DD5F90900126CAC /* QuartzCore.framework in Frameworks */,
+				22AB49911DD5DF4200126CAC /* FirebaseAnalytics.framework in Frameworks */,
 				CDE587211DD4BBCC001D8781 /* GoogleToolboxForMac.framework in Frameworks */,
+				22AB499E1DD5E0DC00126CAC /* GTMOAuth2.framework in Frameworks */,
 				CDE587311DD4BC3C001D8781 /* FirebaseDynamicLinks.framework in Frameworks */,
 				CDE5872F1DD4BC31001D8781 /* FirebaseAppIndexing.framework in Frameworks */,
 				CDE587251DD4BBD6001D8781 /* GTMSessionFetcher.framework in Frameworks */,
 				CDE587201DD4BBCC001D8781 /* GoogleSymbolUtilities.framework in Frameworks */,
+				22AB49931DD5E09B00126CAC /* GoogleAppUtilities.framework in Frameworks */,
+				22AB499B1DD5E0CD00126CAC /* GoogleSignIn.framework in Frameworks */,
+				22AB499F1DD5E0DC00126CAC /* GTMSessionFetcher.framework in Frameworks */,
 				CDE587331DD4BC4F001D8781 /* FirebaseMessaging.framework in Frameworks */,
 				CDE587151DD4BBC9001D8781 /* GoogleMobileAds.framework in Frameworks */,
 				CDE5871D1DD4BBCC001D8781 /* FirebaseCore.framework in Frameworks */,
+				22AB49991DD5E0CD00126CAC /* GoogleParsingUtilities.framework in Frameworks */,
+				22AB49951DD5E0B900126CAC /* GoogleNetworkingUtilities.framework in Frameworks */,
 				CDE587241DD4BBD6001D8781 /* FirebaseAuth.framework in Frameworks */,
 				CDE5871E1DD4BBCC001D8781 /* FirebaseInstanceID.framework in Frameworks */,
 				CDE587291DD4BBE2001D8781 /* FirebaseDatabase.framework in Frameworks */,
 				CDE5872B1DD4BBEC001D8781 /* FirebaseRemoteConfig.framework in Frameworks */,
 				CDE5871F1DD4BBCC001D8781 /* GoogleInterchangeUtilities.framework in Frameworks */,
 				CDE587271DD4BBDB001D8781 /* FirebaseCrash.framework in Frameworks */,
+				22AB499A1DD5E0CD00126CAC /* GooglePlusUtilities.framework in Frameworks */,
 				CDE5872D1DD4BBF1001D8781 /* FirebaseStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +131,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22AB49A01DD5F90900126CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22AB49A51DD6187400126CAC /* CoreLocation.framework */,
+				22AB49A31DD5F91100126CAC /* AVFoundation.framework */,
+				22AB49A11DD5F90900126CAC /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CDE5869A1DD4B2E2001D8781 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +148,6 @@
 				CDE586F51DD4B87A001D8781 /* module.modulemap */,
 				CDE586CE1DD4B4F1001D8781 /* GoogleService-Info.plist */,
 				CDE586B81DD4B3D6001D8781 /* Base.lproj */,
-				CDE586B91DD4B3D6001D8781 /* CollectionViewCell.swift */,
 				CDE586BA1DD4B3D6001D8781 /* DetailViewController.swift */,
 				CDE586BB1DD4B3D6001D8781 /* GradientView.swift */,
 				CDE586BC1DD4B3D6001D8781 /* Images.xcassets */,
@@ -122,6 +159,7 @@
 				CDE586C21DD4B3D6001D8781 /* SectionHeaderView.swift */,
 				CDE586A51DD4B2E2001D8781 /* CaVendramin */,
 				CDE586A41DD4B2E2001D8781 /* Products */,
+				22AB49A01DD5F90900126CAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +185,14 @@
 		CDE586D01DD4B56C001D8781 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				CDE587381DD4BDB4001D8781 /* FirebaseAnalytics.framework */,
+				22AB499C1DD5E0DC00126CAC /* GTMOAuth2.framework */,
+				22AB499D1DD5E0DC00126CAC /* GTMSessionFetcher.framework */,
+				22AB49961DD5E0CD00126CAC /* GoogleParsingUtilities.framework */,
+				22AB49971DD5E0CD00126CAC /* GooglePlusUtilities.framework */,
+				22AB49981DD5E0CD00126CAC /* GoogleSignIn.framework */,
+				22AB49941DD5E0B900126CAC /* GoogleNetworkingUtilities.framework */,
+				22AB49921DD5E09B00126CAC /* GoogleAppUtilities.framework */,
+				22AB49901DD5DF4200126CAC /* FirebaseAnalytics.framework */,
 				CDE587321DD4BC4F001D8781 /* FirebaseMessaging.framework */,
 				CDE587301DD4BC3C001D8781 /* FirebaseDynamicLinks.framework */,
 				CDE5872E1DD4BC31001D8781 /* FirebaseAppIndexing.framework */,
@@ -245,7 +290,6 @@
 				CDE586C81DD4B3D6001D8781 /* ItemsCell.swift in Sources */,
 				CDE586C51DD4B3D6001D8781 /* DetailViewController.swift in Sources */,
 				CDE586C91DD4B3D6001D8781 /* MasterViewController.swift in Sources */,
-				CDE586C41DD4B3D6001D8781 /* CollectionViewCell.swift in Sources */,
 				CDE586CD1DD4B3D6001D8781 /* SectionHeaderView.swift in Sources */,
 				CDE586C61DD4B3D6001D8781 /* GradientView.swift in Sources */,
 				CDE586A71DD4B2E2001D8781 /* AppDelegate.swift in Sources */,
@@ -369,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 93MU66AW6P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,7 +421,7 @@
 				);
 				INFOPLIST_FILE = CaVendramin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Casino--di-Venezia-Gioco-Spa.CaVendramin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -387,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 93MU66AW6P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,7 +440,7 @@
 				);
 				INFOPLIST_FILE = CaVendramin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Casino--di-Venezia-Gioco-Spa.CaVendramin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

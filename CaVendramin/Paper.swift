@@ -33,16 +33,18 @@ class Paper {
   var imageName: String
   var section: String
   var index: Int
+    var text: String
   
-  init(caption: String, imageName:String, section: String, index: Int) {
+    init(caption: String, imageName:String, section: String, index: Int, text: String) {
     self.caption = caption
     self.imageName = imageName
     self.section = section
     self.index = index
+    self.text = text
   }
   
   convenience init(copying paper: Paper) {
-    self.init(caption: paper.caption, imageName: paper.imageName, section: paper.section, index: paper.index)
+    self.init(caption: paper.caption, imageName: paper.imageName, section: paper.section, index: paper.index, text:paper.text)
   }
   
 }

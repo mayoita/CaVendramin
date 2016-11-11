@@ -7,20 +7,125 @@
 //
 
 import UIKit
+import QuartzCore
+import CoreLocation
 
-class MasterViewController: UICollectionViewController {
+class MasterViewController: UICollectionViewController,CLLocationManagerDelegate {
     private var paperDataSource = PapersDataSource()
+    
+    //Beacons var
+    @IBOutlet weak var lblBeaconReport: UILabel!
+    var beaconRegion: CLBeaconRegion!
+    var locationManager: CLLocationManager!
+    var isSearchingForBeacons = false
+    var lastFoundBeacon: CLBeacon! = CLBeacon()
+    var lastProximity: CLProximity! = CLProximity.unknown
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let width = collectionView!.frame.width / 2
+        beaconsInit()
+        switchSpotting()
+        let width = collectionView!.frame.width / 3
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
     }
+    func beaconsInit ()  {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        
+        let uuid = NSUUID(uuidString: "F34A1A1F-500F-48FB-AFAA-9584D641D7B1")
+        beaconRegion = CLBeaconRegion(proximityUUID: uuid as! UUID, identifier: "com.appcoda.beacondemo")
+        
+        beaconRegion.notifyOnEntry = true
+        beaconRegion.notifyOnExit = true
+    }
+    
+    func switchSpotting() {
+        if !isSearchingForBeacons {
+            locationManager.requestAlwaysAuthorization()
+            locationManager.startMonitoring(for: beaconRegion)
+            locationManager.startUpdatingLocation()
+            
+          //  btnSwitchSpotting.setTitle("Stop Spotting", for: UIControlState())
+            lblBeaconReport.text = "Spotting beacons..."
+        }
+        else {
+            locationManager.stopMonitoring(for: beaconRegion)
+            locationManager.stopRangingBeacons(in: beaconRegion)
+            locationManager.stopUpdatingLocation()
+            
+            //btnSwitchSpotting.setTitle("Start Spotting", for: UIControlState())
+            lblBeaconReport.text = "Not running"
+           // lblBeaconDetails.isHidden = true
+        }
+        
+        isSearchingForBeacons = !isSearchingForBeacons
+    }
+    func locationManager(_ manager: CLLocationManager!, didStartMonitoringFor region: CLRegion!) {
+        locationManager.requestState(for: region)
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager!, didDetermineState state: CLRegionState, for region: CLRegion!) {
+        if state == CLRegionState.inside {
+            locationManager.startRangingBeacons(in: beaconRegion)
+        }
+        else {
+            locationManager.stopRangingBeacons(in: beaconRegion)
+        }
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
+        lblBeaconReport.text = "Beacon in range"
+       // lblBeaconDetails.isHidden = false
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager!, didExitRegion region: CLRegion!) {
+        lblBeaconReport.text = "No beacons in range"
+       // lblBeaconDetails.isHidden = true
+    }
+    func locationManager(_ manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
+        var shouldHideBeaconDetails = true
+        
+        if let foundBeacons = beacons {
+            if foundBeacons.count > 0 {
+                if let closestBeacon = foundBeacons[0] as? CLBeacon {
+                    if closestBeacon != lastFoundBeacon || lastProximity != closestBeacon.proximity  {
+                        lastFoundBeacon = closestBeacon
+                        lastProximity = closestBeacon.proximity
+                        
+                        var proximityMessage: String!
+                        switch lastFoundBeacon.proximity {
+                        case CLProximity.immediate:
+                            proximityMessage = "Very close"
+                            
+                        case CLProximity.near:
+                            proximityMessage = "Near"
+                            
+                        case CLProximity.far:
+                            proximityMessage = "Far"
+                            
+                        default:
+                            proximityMessage = "Where's the beacon?"
+                        }
+                        
+                        shouldHideBeaconDetails = false
+                        
+            //            lblBeaconDetails.text = "Beacon Details:\nMajor = " + String(closestBeacon.major.int32Value) + "\nMinor = " + String(closestBeacon.minor.int32Value) + "\nDistance: " + proximityMessage
+                    }
+                }
+            }
+        }
+        
+       // lblBeaconDetails.isHidden = shouldHideBeaconDetails
+    }
+    
+    //Collection
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        var a = paperDataSource.numberOfSections
+    
         return paperDataSource.numberOfSections
     }
     

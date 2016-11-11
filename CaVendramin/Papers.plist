@@ -11,6 +11,14 @@
 		<string>Winter</string>
 		<key>index</key>
 		<integer>0</integer>
+		<key>text</key>
+		<string>Nato da Antonio Palma, pittore, e Giulia de Pitati, appartenenti ad una famiglia dalla spiccata indole artistica, fu subito iniziato agli studi pittorici sulle orme dello zio del padre, Palma il Vecchio e del fratello della madre, Bonifacio de Pitati, detto Bonifacio Veronese.
+
+Nel 1564 il duca di Urbino Guidobaldo Secondo della Rovere, in visita a Venezia, apprezzò le doti artistiche di Jacopo che dapprima lo invitò a corte e in seguito, nel maggio 1567, lo inviò quattro anni a Roma ospite del suo ambasciatore Traiano Mario. Del periodo romano il Ritratto di Matteo da lecce che riporta la scritta pitor in Roma del 1568.
+
+Studiò e subì l&apos;influenza di Raffaello e Tintoretto, eseguì varie copie di Tiziano, suo vero maestro, col quale in seguito collaborò portandone anche a termine il celebre dipinto La Pietà.
+
+Si formò nel periodo della scuola veneta e del manierismo romano, che ebbe modo di apprendere durante i quattro anni del suo soggiorno romano.</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -21,6 +29,8 @@
 		<string>Winter</string>
 		<key>index</key>
 		<integer>1</integer>
+		<key>text</key>
+		<string>a</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -31,6 +41,8 @@
 		<string>Winter</string>
 		<key>index</key>
 		<integer>2</integer>
+		<key>text</key>
+		<string>b</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -41,6 +53,8 @@
 		<string>Spring</string>
 		<key>index</key>
 		<integer>3</integer>
+		<key>text</key>
+		<string>c</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -51,6 +65,8 @@
 		<string>Spring</string>
 		<key>index</key>
 		<integer>4</integer>
+		<key>text</key>
+		<string>d</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -61,6 +77,8 @@
 		<string>Spring</string>
 		<key>index</key>
 		<integer>5</integer>
+		<key>text</key>
+		<string>e</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -71,6 +89,8 @@
 		<string>Summer</string>
 		<key>index</key>
 		<integer>6</integer>
+		<key>text</key>
+		<string>f</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -81,6 +101,8 @@
 		<string>Summer</string>
 		<key>index</key>
 		<integer>7</integer>
+		<key>text</key>
+		<string>g</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -91,6 +113,8 @@
 		<string>Summer</string>
 		<key>index</key>
 		<integer>8</integer>
+		<key>text</key>
+		<string>h</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -101,6 +125,8 @@
 		<string>Fall</string>
 		<key>index</key>
 		<integer>9</integer>
+		<key>text</key>
+		<string>h</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -111,6 +137,8 @@
 		<string>Fall</string>
 		<key>index</key>
 		<integer>10</integer>
+		<key>text</key>
+		<string>i</string>
 	</dict>
 	<dict>
 		<key>caption</key>
@@ -121,6 +149,8 @@
 		<string>Fall</string>
 		<key>index</key>
 		<integer>11</integer>
+		<key>text</key>
+		<string>l</string>
 	</dict>
 </array>
 </plist>

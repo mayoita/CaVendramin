@@ -138,7 +138,8 @@ class PapersDataSource {
             let imageName = dict["imageName"] as! String
             let section = dict["section"] as! String
             let index = dict["index"] as! Int
-            let paper = Paper(caption: caption, imageName: imageName, section: section, index: index)
+            let text = dict["text"] as! String
+            let paper = Paper(caption: caption, imageName: imageName, section: section, index: index, text: text)
             if !sections.contains(section) {
               sections.append(section)
             }
