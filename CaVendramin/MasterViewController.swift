@@ -38,6 +38,7 @@ class MasterViewController: UICollectionViewController,CLLocationManagerDelegate
         
         beaconRegion.notifyOnEntry = true
         beaconRegion.notifyOnExit = true
+        beaconRegion.notifyEntryStateOnDisplay = true
     }
     
     func switchSpotting() {
@@ -61,12 +62,12 @@ class MasterViewController: UICollectionViewController,CLLocationManagerDelegate
         
         isSearchingForBeacons = !isSearchingForBeacons
     }
-    func locationManager(_ manager: CLLocationManager!, didStartMonitoringFor region: CLRegion!) {
+    func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
         locationManager.requestState(for: region)
     }
     
     
-    func locationManager(_ manager: CLLocationManager!, didDetermineState state: CLRegionState, for region: CLRegion!) {
+    func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
         if state == CLRegionState.inside {
             locationManager.startRangingBeacons(in: beaconRegion)
         }
@@ -74,19 +75,24 @@ class MasterViewController: UICollectionViewController,CLLocationManagerDelegate
             locationManager.stopRangingBeacons(in: beaconRegion)
         }
     }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        
+            print(error)
+        
+        
+    }
     
-    
-    func locationManager(_ manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         lblBeaconReport.text = "Beacon in range"
        // lblBeaconDetails.isHidden = false
     }
     
     
-    func locationManager(_ manager: CLLocationManager!, didExitRegion region: CLRegion!) {
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         lblBeaconReport.text = "No beacons in range"
        // lblBeaconDetails.isHidden = true
     }
-    func locationManager(_ manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
+    private func locationManager(_ manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
         var shouldHideBeaconDetails = true
         
         if let foundBeacons = beacons {
